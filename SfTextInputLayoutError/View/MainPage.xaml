@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SfTextInputLayoutError.MainPage"
+             xmlns:inputLayout="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="-20" Margin="5,2,5,2">
+            <inputLayout:SfTextInputLayout Hint="Campo 1"  ContainerType="Outlined" >
+                <Entry Text=""  />
+            </inputLayout:SfTextInputLayout>
+
+            <inputLayout:SfTextInputLayout Hint="Campo 2" ContainerType="Outlined">
+                <Entry Text="" />
+            </inputLayout:SfTextInputLayout>
+
+            <Button
+                x:Name="NavigationBtn"
+                Text="Navegar para a SecondaryPage" 
+                Clicked="NavigationBtn_Clicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
